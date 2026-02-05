@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
-import { PowersupplyService } from './powersupply.service';
+import { PowerSupplyService } from './powersupply.service';
 
 @Module({
-  providers: [PowersupplyService]
+  exports: [PowerSupplyService],
+  providers: [PowerSupplyService]
 })
-export class PowersupplyModule {}
+export class PowerSupplyModule {}
